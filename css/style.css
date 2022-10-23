@@ -1,0 +1,370 @@
+:root {
+  --general-gray-text: #757575;
+  --second-black-text: #212121;
+  --color-white: #ffffff;
+  --color-blue: #2196f3;
+  --color-footer: #2f303a;
+}
+
+/* для body */
+body {
+  background-color: var(--color-white);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+}
+
+/* шапка\хедер */
+.hat {
+  width: 1600px;
+  height: 80px;
+  background-color: var(--color-white);
+  border: 1px solid #ececec;
+  border-right-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Логотип */
+
+.hat-logo {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.firstlogo {
+  color: var(--color-blue);
+}
+.secondlogo {
+  color: var(--second-black-text);
+}
+
+/* навігація */
+
+.hat-navi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 50%;
+  justify-content: space-around;
+}
+
+.link-navi {
+  text-decoration: none;
+  font-style: inherit;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.02em;
+}
+.link-navi a {
+  text-decoration: none;
+  color: var(--second-black-text);
+}
+
+.link-navi .link.current {
+  color: var(--color-blue);
+}
+/* контакти шапки */
+.hat-contact {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+.hat-contact a {
+  text-decoration: none;
+  padding-left: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.02em;
+  color: var(--general-gray-text);
+}
+
+.hat a:hover,
+.hat a:focus {
+  color: var(--color-blue);
+}
+/* футер */
+.section-footer {
+  width: 1600px;
+  height: 252px;
+  background-color: var(--color-footer);
+}
+.addressposition {
+  padding: 60px 1154px 60px 215px;
+}
+/* логотип футер */
+.logofooter {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.thirdlogo {
+  color: var(--color-blue);
+}
+
+.fourthlogo {
+  color: var(--color-white);
+}
+/* футер адреса */
+.footaddress {
+  text-decoration: none;
+  width: 231px;
+  height: 81px;
+
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.cont {
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+.cont:hover,
+.cont:focus {
+  color: var(--color-blue);
+}
+
+.footaddress .maps {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.74;
+  color: var(--color-white);
+}
+/* секція герой */
+.hero {
+  background-color: var(--color-footer);
+  width: 1600px;
+  height: 600px;
+  text-align: center;
+}
+
+.hero-phrase {
+  width: 696px;
+  height: 120px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  padding: 200px 452px 30px 452px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
+
+.button-hero {
+  width: 216px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  cursor: pointer;
+  margin: 0 692px 200px 692px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+/* секція факти */
+.invisible {
+  position: absolute;
+  opacity: 0;
+}
+
+.quality ul {
+  width: 1170px;
+  margin: 94px 215px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fact {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--second-black-text);
+}
+
+.descr {
+  width: 270px;
+  font-size: 14px;
+  line-height: 1.71;
+
+  padding-top: 10px;
+
+  color: var(--general-gray-text);
+}
+/* чим ми займаємось */
+.work {
+  width: 1170px;
+  height: 386px;
+
+  margin: 94px 215px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.work ul {
+  display: flex;
+  justify-content: space-between;
+}
+.work > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--second-black-text);
+}
+/* команда */
+.team {
+  width: 1600px;
+  height: 648px;
+
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f5f4fa;
+}
+
+.team > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  padding-top: 94px;
+  padding-bottom: 50px;
+
+  color: var(--second-black-text);
+}
+
+.team ul {
+  width: 1170px;
+
+  justify-content: space-between;
+
+  display: flex;
+}
+
+.team li {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  height: 368px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: var(--color-white);
+}
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  padding-top: 30px;
+  text-align: center;
+}
+.team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  padding-bottom: 30px;
+  color: var(--general-gray-text);
+}
+/* portfolio body */
+
+.btn-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-filter {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--second-black-text);
+  padding: 6px 22px;
+}
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.product a {
+  text-decoration: none;
+}
+.product li {
+  border: 1px solid #eeeeee;
+  height: 404px;
+  width: 370px;
+  background-color: var(--color-white);
+}
+
+.product h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--second-black-text);
+}
+.product p {
+  font-size: 16px;
+  line-height: 1.875;
+
+  color: var(--general-gray-text);
+}
