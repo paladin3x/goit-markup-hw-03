@@ -38,8 +38,8 @@ ul {
 .hat-logo {
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   margin-right: 93px;
 
   text-decoration: none;
@@ -126,7 +126,8 @@ ul {
 
 /* логотип футер */
 .logofooter {
-  margin-bottom: 20;
+  display: block;
+  margin-bottom: 20px;
 
   text-decoration: none;
   font-family: "Raleway";
@@ -146,6 +147,23 @@ ul {
 .footaddress {
   text-decoration: none;
 }
+
+.maps {
+  display: block;
+  margin-bottom: 9px;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.74;
+  color: var(--color-white);
+}
+.email {
+  display: block;
+  margin-bottom: 9px;
+}
+.tel {
+  display: block;
+}
 .cont {
   font-style: normal;
   font-size: 14px;
@@ -158,13 +176,6 @@ ul {
   color: var(--color-blue);
 }
 
-.footaddress .maps {
-  font-style: normal;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.74;
-  color: var(--color-white);
-}
 /* секція герой */
 .hero-content {
   margin-top: 200px;
@@ -226,16 +237,21 @@ ul {
 }
 .quality {
   background-color: var(--color-white);
-}
-.quality-flex {
-  display: flex;
-  justify-content: center;
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.quality-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quality-flex li {
+  width: 270px;
+}
+
 .fact {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -255,11 +271,9 @@ ul {
 /* чим ми займаємось */
 .work {
   background-color: var(--color-white);
-}
-.work-box {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .work-flex {
   margin-top: 50px;
   display: flex;
@@ -282,11 +296,10 @@ ul {
 /* команда */
 .team {
   background-color: #f5f4fa;
-}
-.team .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .team-flex {
   display: flex;
   justify-content: space-between;
@@ -294,7 +307,6 @@ ul {
 }
 .team-flex img {
   display: block;
-  margin-bottom: 30px;
 }
 
 .team h2 {
@@ -318,6 +330,13 @@ ul {
 
   background-color: var(--color-white);
 }
+
+.team-descr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+}
 .team-flex h3 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -329,7 +348,7 @@ ul {
 }
 .team p {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -342,7 +361,7 @@ ul {
   background-color: var(--color-white);
 }
 
-.filter-flex {
+.product {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -420,10 +439,10 @@ ul {
 .product-link img {
   width: 100%;
   display: block;
-  margin-bottom: 20px;
 }
 .card-title {
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
