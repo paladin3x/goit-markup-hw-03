@@ -118,10 +118,10 @@ ul {
 /* футер */
 .section-footer {
   background-color: var(--color-footer);
-}
-.footer-box {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-box {
 }
 
 /* логотип футер */
